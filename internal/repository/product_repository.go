@@ -48,7 +48,7 @@ func (repo *productRepository) CreateNewProduct(ctx context.Context, product *en
 		product.CreatedBy,
 		product.UpdatedAt,
 		product.UpdatedBy,
-		product.DeletedBy,
+		product.DeletedAt,
 		product.DeletedBy,
 		product.IsDeleted,
 	)
