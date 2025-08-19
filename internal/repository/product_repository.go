@@ -53,9 +53,11 @@ func (repo *productRepository) CreateNewProduct(ctx context.Context, product *en
 		product.IsDeleted,
 	)
 	if err != nil {
+		fmt.Println("❌ ERROR INSERT PRODUCT:", err)
 		return err
 	}
 
+	fmt.Println("✅ Product berhasil diinsert ke DB:", product.Id)
 	return nil
 }
 
